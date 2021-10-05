@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Model Deployment</title>
+</head>
+<body>
+    <h1>Predict your exam score</h1>
+
+    <p>
+        Enter the number of hours you studied
+    </p>
+    <form action="/" method="POST">
+        <input type="number" name="hrs" placeholder="number of hours studied">
+        <input type="submit">
+    </form>
+
+<!--    {{my_marks}}-->
+
+    {% if my_marks %}
+        <p>Your predicted marks are:</p>{{my_marks}}
+    {% endif %}
+
+</body>
+</html>
